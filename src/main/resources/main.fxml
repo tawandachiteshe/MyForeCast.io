@@ -26,7 +26,7 @@
             <Font name="Century Gothic" size="11.0" />
          </font>
       </Text>
-      <Text fx:id="summaryText" fill="WHITE" layoutX="203.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="clear">
+      <Text fx:id="summaryText" fill="WHITE" layoutX="216.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="clear">
          <font>
             <Font name="Century Gothic" size="11.0" />
          </font>
@@ -66,7 +66,7 @@
             <Image url="@icons/windspeed.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="summary" fitHeight="24.0" fitWidth="24.0" layoutX="179.0" layoutY="360.0" pickOnBounds="true" smooth="false">
+      <ImageView fx:id="summary" fitHeight="24.0" fitWidth="24.0" layoutX="181.0" layoutY="360.0" pickOnBounds="true" smooth="false">
          <image>
             <Image url="@icons/summary.png" />
          </image>
@@ -77,5 +77,10 @@
          </font>
       </JFXTextField>
       <JFXButton fx:id="submitBtn" buttonType="RAISED" contentDisplay="CENTER" layoutX="386.0" layoutY="218.0" onMousePressed="#submitBtnPressed" prefHeight="55.0" prefWidth="71.0" ripplerFill="WHITE" style="-fx-background-color: #565656;" styleClass="submitBtn" text="Submit" textFill="WHITE" />
+      <ImageView fitHeight="77.0" fitWidth="71.0" layoutX="137.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/marker.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

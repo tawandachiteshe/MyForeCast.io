@@ -91,7 +91,6 @@ public class mainController implements Initializable {
                 GeoResult.Bounds bounds = response.body().getResults().get(0).getBounds();
                 GeoResult.Bounds.Northeast northeast =  bounds.getNortheast();
                 getWeatherData(northeast.getLat(), northeast.getLng());
-                System.out.println(northeast.getLat());
             }
 
             public void onFailure(Call<GeoLocationModel> call, Throwable throwable) {
@@ -116,7 +115,7 @@ public class mainController implements Initializable {
                     icon.setImage(new Image(loader.getResource("icons/rain.png").toString()));
                 }
                 else if(weatherModel.getCurrentlyModel().getIcon().equals("partly-cloudy-day")){
-                    icon.setImage(new Image(loader.getResource("icons/partly-cloudy-day.png").toString()));
+                    icon.setImage(new Image(loader.getResource("icons/partly_cloudy_day_.png").toString()));
 
                 }
                 else if(weatherModel.getCurrentlyModel().getIcon().equals("partly-cloudy-night")){
@@ -133,7 +132,6 @@ public class mainController implements Initializable {
                 summaryText.setText(weatherModel.getCurrentlyModel().getSummary());
                 humiText.setText(weatherModel.getCurrentlyModel().getHumidity());
                 windText.setText(weatherModel.getCurrentlyModel().getWindSpeed());
-                System.out.println(response.toString());
 
             }
 
